@@ -1,0 +1,4 @@
+Proposition 2.4 / Table 1: PASS
+first relation types = 23
+immediately additive type = (0,1,1,1)
+non-additive types = 22
