@@ -1,4 +1,4 @@
-99b4b852dc5fa2869ed4c1d6faa37da88ad57d0ee31402a2ad60e53938d205dd  ./.github/workflows/verify.yml
+62e986d1db3faae8dbfe5b7540d301f10ac7e4c64e96fab2a08f1b1a7961858b  ./.github/workflows/verify.yml
 4c1eb27234bd2ab4bc7b885549f32f3992412ca8333cc17c602651b93738838e  ./.gitignore
 36d7751eff2e1acaa0887a8b6dc8d589cbbd2cb9b0a149a1ab71acbbabf54168  ./CITATION.cff
 82d73b6a90f2a5ff3def7bfcad289d450de9a9d6472c454ec29cd34ce21554f8  ./LICENSE
@@ -17,7 +17,6 @@ f32016e5853ddac114dab5ccfae3c87d0af056db134dc5dc4a44a09c9bc963fe  ./expected_out
 01c67c1d5444cf378fe5f744a4414f248115f33217f3c0a6cad725138e8faf97  ./expected_output/proposition_2_8.txt
 0d0ddd5844d9da210a876b52ee3d27d47bd44c0b060131a26042eaa3b154ceda  ./expected_output/proposition_3_2.txt
 3fa229f8d3d145701188b8f88d125d4274603b9caa226a4035a6b6fad4eb5eb1  ./requirements.txt
-aeffea4a9199dad2ab8cde210745280d1374a5fb7ae440c18520539903b93b27  ./src/__pycache__/_cpp_runner.cpython-312.pyc
 f1194d4c8001e0963efc87f9171569ef38ef71f4705c32704f11b07af8af1aa2  ./src/_cpp_runner.py
 8570fee6f35d96bef8ee0d0930aee7586c471700b7c05c99e6bca8dc63b7bb09  ./src/enumerate_planes.py
 0ae6c72c8cba5644fc657969add31b0de6000ce21d1117fc6932d148c8e670b5  ./src/exact_box_core.cpp
