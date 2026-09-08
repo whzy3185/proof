@@ -1,0 +1,3 @@
+# No third-party Python packages are required for verification.
+# Python >= 3.10 is recommended.
+# Full finite checks additionally require a C++17 compiler (g++ or clang++).
