@@ -1,0 +1,4 @@
+Proposition 2.6: PASS
+least k = 3 for 20 types
+least k = 4 for (1,1,1,2)
+least k = 9 for (0,0,1,2)
