@@ -1,0 +1,3 @@
+Lemma 2.9 endpoint universes: PASS
+|E_290| = 34205
+|E_445| = 80381
