@@ -1,0 +1,18 @@
+Proposition 2.8 plane enumeration: PASS
+N4 = 1620
+N5 = 3620
+N10 = 47844
+independent relation pairs = 83842
+distinct rational relation planes = 37612
+forbidden planes = 538
+admissible planes = 37074
+signed-permutation classes = 6866
+generated/certified class-set equality = PASS
+missing classes = 0
+extra classes = 0
+
+Proposition 2.8 plane certificates: PASS
+certificate rows = 6866
+maximum certified speed bound = 290
+minimum safety margin = 1/28
+maximum denominator = 17
