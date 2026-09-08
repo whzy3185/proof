@@ -37,6 +37,8 @@ jobs:
           find . -type f \
             ! -path './.git/*' \
             ! -path './.build/*' \
+            ! -path '*/__pycache__/*' \
+            ! -name '*.pyc' \
             ! -name 'SHA256SUMS' \
             -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
 
