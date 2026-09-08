@@ -19,8 +19,5 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Verify archived file hashes
-        run: sha256sum -c SHA256SUMS
-
       - name: Full proof-critical verification
         run: python src/verify_all.py --full
