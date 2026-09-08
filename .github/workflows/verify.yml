@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
   verify:
@@ -19,36 +19,8 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Generate plane data if absent
-        shell: bash
-        run: |
-          if [[ ! -f data/plane_classes_6866.csv || ! -f data/plane_safe_points.csv ]]; then
-            python src/enumerate_planes.py --no-compare --write-canonical /tmp/canonical_pluecker.csv
-            g++ -O3 -std=c++17 src/generate_plane_data.cpp -o /tmp/generate_plane_data
-            /tmp/generate_plane_data /tmp/canonical_pluecker.csv data/plane_classes_6866.csv data/plane_safe_points.csv
-          fi
+      - name: Verify archived file hashes
+        run: sha256sum -c SHA256SUMS
 
       - name: Full proof-critical verification
         run: python src/verify_all.py --full
-
-      - name: Refresh hashes
-        shell: bash
-        run: |
-          find . -type f \
-            ! -path './.git/*' \
-            ! -path './.build/*' \
-            ! -path '*/__pycache__/*' \
-            ! -name '*.pyc' \
-            ! -name 'SHA256SUMS' \
-            -print0 | sort -z | xargs -0 sha256sum > SHA256SUMS
-
-      - name: Commit generated data if needed
-        shell: bash
-        run: |
-          git add data/plane_classes_6866.csv data/plane_safe_points.csv SHA256SUMS
-          if ! git diff --cached --quiet; then
-            git config user.name 'github-actions[bot]'
-            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-            git commit -m 'Generate and verify exact plane certificate data'
-            git push
-          fi
