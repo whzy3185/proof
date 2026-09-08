@@ -1,0 +1,7 @@
+Proposition 3.2: PASS
+|E_445| = 80381
+parameter triples = 815970
+no-common-safe-time triples = 7149
+family-(B) parameter triples = 7148
+exceptional speed set = {1,3,4,14}
+unclassified = 0
