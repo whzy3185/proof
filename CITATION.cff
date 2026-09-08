@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this verification code, please cite the associated manuscript."
+title: "Exact verification for The four-speed Lonely Runner spectrum below 1/4"
+type: software
+version: 1.0.0
+date-released: 2026-09-08
+url: "https://github.com/whzy3185/proof"
+authors:
+  - family-names: Chen
+    given-names: Yaoyang
+    orcid: "https://orcid.org/0009-0006-0444-3417"
+  - family-names: Zhao
+    given-names: Yicheng
+  - family-names: Zhou
+    given-names: Xiangjiang
+  - family-names: Li
+    given-names: Jiachen
+preferred-citation:
+  type: article
+  title: "The four-speed Lonely Runner spectrum below 1/4"
+  authors:
+    - family-names: Chen
+      given-names: Yaoyang
+    - family-names: Zhao
+      given-names: Yicheng
+    - family-names: Zhou
+      given-names: Xiangjiang
+    - family-names: Li
+      given-names: Jiachen
+  year: 2026
