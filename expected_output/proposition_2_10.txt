@@ -1,0 +1,6 @@
+Proposition 2.10: PASS
+|E_290| = 34205
+total quadruples = 288641640
+additive quadruples = 5971776
+non-additive quadruples = 282669864
+non-additive failures = 0
