@@ -1,0 +1,5 @@
+.build/
+__pycache__/
+*.pyc
+generated_plane_safe_points.csv
+generated_*.csv
